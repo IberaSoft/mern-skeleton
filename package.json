@@ -1,0 +1,48 @@
+{
+  "name": "mern-skeleton",
+  "version": "0.0.1",
+  "description": "MERN skeleton application with basic user CRUD and auth features",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "node",
+    "express",
+    "mongodb",
+    "mern"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shamahoque/mern-simplesetup.git"
+  },
+  "homepage": "https://github.com/shamahoque/mern-simplesetup",
+  "main": "template.js",
+  "scripts": {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
+  "engines": {
+    "node": "^13.12.0",
+    "npm": "^6.14.4"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "17.0.0",
+    "express": "4.17.1",
+    "mongodb": "3.6.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-hot-loader": "4.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.3",
+    "@babel/preset-env": "7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "8.2.1",
+    "nodemon": "2.0.6",
+    "webpack": "5.4.0",
+    "webpack-cli": "4.2.0",
+    "webpack-dev-middleware": "4.0.2",
+    "webpack-hot-middleware": "2.25.0",
+    "webpack-node-externals": "2.5.2"
+  }
+}
