@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    env_file:
+      - .env.local
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:8
+    restart: always
+    ports:
+      - '27017:27017'
+    volumes:
+      - mern_skeleton_mongo_data:/data/db
+
+volumes:
+  mern_skeleton_mongo_data:
