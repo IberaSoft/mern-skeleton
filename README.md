@@ -213,7 +213,3 @@ smoothly with it (Vite + TS + Tailwind).
   ```bash
   docker compose -f docker-compose.local.yml up --build
   ```
-
-You now have a **modern, opinionated MERN template** you can reuse across
-personal projects. Tweak the stack details as needed, drop in shadcn/ui
-when you want richer UI, and you’re ready to ship fast. 🚀
